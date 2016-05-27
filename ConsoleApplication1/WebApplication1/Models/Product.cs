@@ -14,6 +14,5 @@ namespace WebApplication1.Models
         public int ProductNumber { get; set; }
         public decimal Price { get; set; }
         public int ProductsInStock { get; set; }
-
     }
 }
