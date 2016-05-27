@@ -15,27 +15,31 @@ namespace ConsoleApplication1.Tests
         public void DistanceInText()
         {
             //Arrange
+            GetCurrentSpeed cal = new GetCurrentSpeed();
             //Actual
+            var actual = cal.SpeedCalc("trettiofem");
             //Assert
-            Assert.Fail();
         }
 
         [TestMethod()]
         public void SpeedCalcTest()
         {
             //Arrange
+            GetCurrentSpeed cal = new GetCurrentSpeed();
             //Actual
+
             //Assert
-            Assert.Fail();
         }
         [TestMethod()]
-        public void SpeedCalcTest()
+        public void SpeedCalcWithSpace()
         {
             //Arrange
-            //Actual
+            GetCurrentSpeed cal = new GetCurrentSpeed();
+            //Act
+            var actual = cal.SpeedCalc(" 5");
+            var expected = 45;
             //Assert
-            Assert.Fail();
+            Assert.AreEqual(expected, actual, "Space + number test Correct");
         }
     }
 }
-
